@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<h:body> 
+	<h1>Bem vindo</h1>
+	<h:form >
+	<h:panelGrid columns="1" border="2">
+		<h:outputLabel value="Area de acesso" />
+		<h:outputLabel value="Login" />
+		<h:inputText value="#{clienteBean.cliente.login}"/>
+		<h:outputLabel value="senha" />
+		<h:inputSecret value="#{clienteBean.cliente.senha}" />
+		<h:outputLabel />
+		<h:commandButton value="Logar" />
+	</h:panelGrid>
+	</h:form>
+	
+	<br/><hr/>
+</h:body> 
+</html>
